@@ -131,25 +131,36 @@
 
 							<div class="split style1">
 								<section>
-									<form method="POST" action="https://formspree.io/streamlinedrocket@gmail.com">
-										<div class="fields">
+								
+<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSe-hsFHC0IkQ8RtEcsidHpCquuq0LN8_x2dyMTjyQLVJXQQrA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+  <div class="fields">
 											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
-											</div>
-											<div class="field half">
-												<label for="name">Email</label>
-												<input type="text" name="name" id="name" />
-											</div>
+Name:<br>
+  <input type="text" name="entry.508301491" id="entry.508301491"><br>
+</div>
+											<div class="field half">  
+Emai:<br>
+  <input type="text" name="entry.1703723557" id="entry.1703723557"><br>
+</div>
 											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
-											</div>
+  Message:<br>
+  <input type="text" name="entry.424632008" id="entry.424632008" style="Height: 200px;"> <br>
+</div>
 										</div>
-										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
-										</ul>
-									</form>
+  <input type="submit" value="Submit">
+</form>
+
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
+<script src="assets/js/jquery.min.js"></script>
+<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend('Your submission has been processed...');
+  });
+</script>
+
 								</section>
 								<section>
 									<ul class="contact">
